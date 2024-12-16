@@ -17,7 +17,7 @@ export default function Header() {
               className="relative w-40 h-12"
             >
               <Image
-                src="/img/logo.png"
+                src="/img/slogo.png"
                 alt="EroticaAI"
                 fill
                 className="object-contain"
