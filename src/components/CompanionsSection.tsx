@@ -6,17 +6,17 @@ import { useRouter } from 'next/navigation';
 
 const companions = [
   { id: 'kenzie', name: 'Kenzie', origin: 'American', image: '/img/Kenzie - American.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
-  { id: 'stacy', name: 'Stacy', origin: 'India', image: '/img/Stacy - India.jpg', online: true, rating: 4.8, responseTime: '< 1 min' },
-  { id: 'niya', name: 'Niya', origin: 'Dubai', image: '/img/Niya - Dubai.jpg', online: false, rating: 4.9, responseTime: '5 min' },
-  { id: 'sofie', name: 'Sofie', origin: 'Canada', image: '/img/Sofie - Canada.jpg', online: true, rating: 5.0, responseTime: '< 1 min' },
-  { id: 'scarlett', name: 'Scarlett', origin: '', image: '/img/Scarlett.jpg', online: true, rating: 4.7, responseTime: '< 1 min' },
-  { id: 'lily', name: 'Lily', origin: 'Indonesian', image: '/img/Lily - Indonesian.jpg', online: false, rating: 4.8, responseTime: '10 min' },
   { id: 'milana', name: 'Milana', origin: '', image: '/img/Milana.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
-  { id: 'natasha', name: 'Natasha', origin: 'American', image: '/img/Natasha - American.jpg', online: true, rating: 4.8, responseTime: '< 1 min' },
-  { id: 'elysia', name: 'Elysia', origin: 'Irish', image: '/img/Elysia - Irish.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
-  { id: 'briana', name: 'Briana', origin: '', image: '/img/Briana.jpg', online: false, rating: 4.7, responseTime: '15 min' },
   { id: 'tatiana', name: 'Tatiana', origin: '', image: '/img/Tatiana.jpg', online: true, rating: 4.8, responseTime: '< 1 min' },
-  { id: 'sicha', name: 'Sicha', origin: '', image: '/img/Sicha.jpg', online: true, rating: 5.0, responseTime: '< 1 min' },
+  { id: 'lily', name: 'Lily', origin: 'Indonesian', image: '/img/Lily - Indonesian.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
+  { id: 'scarlett', name: 'Scarlett', origin: '', image: '/img/Scarlett.jpg', online: true, rating: 5.0, responseTime: '< 1 min' },
+  { id: 'briana', name: 'Briana', origin: '', image: '/img/Briana.jpg', online: true, rating: 4.8, responseTime: '< 1 min' },
+  { id: 'elysia', name: 'Elysia', origin: 'Irish', image: '/img/Elysia - Irish.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
+  { id: 'sofie', name: 'Sofie', origin: 'Canada', image: '/img/Sofie - Canada.jpg', online: true, rating: 5.0, responseTime: '< 1 min' },
+  { id: 'natasha', name: 'Natasha', origin: 'American', image: '/img/Natasha - American.jpg', online: true, rating: 4.9, responseTime: '< 1 min' },
+  { id: 'sicha', name: 'Sicha', origin: '', image: '/img/Sicha.jpg', online: false, rating: 4.8, responseTime: '5 min' },
+  { id: 'niya', name: 'Niya', origin: 'Dubai', image: '/img/Niya - Dubai.jpg', online: false, rating: 4.9, responseTime: '5 min' },
+  { id: 'stacy', name: 'Stacy', origin: 'India', image: '/img/Stacy - India.jpg', online: true, rating: 4.8, responseTime: '< 1 min' },
 ];
 
 export default function CompanionsSection() {

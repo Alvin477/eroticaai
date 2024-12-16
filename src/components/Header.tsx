@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Header() {
@@ -9,13 +10,19 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold">
+          <Link href="/" className="relative">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-red-500 to-rose-500 text-transparent bg-clip-text"
+              className="relative w-40 h-12"
             >
-              EroticaAI
+              <Image
+                src="/img/logo.png"
+                alt="EroticaAI"
+                fill
+                className="object-contain"
+                priority
+              />
             </motion.div>
           </Link>
 

@@ -59,7 +59,7 @@ export default function ConsentPopup() {
               <div className="prose prose-invert prose-sm max-w-none space-y-3 mb-6 text-gray-300">
                 <p className="text-lg font-semibold text-white">Adults only!</p>
                 <p>This website should be accessed only by people who are at least eighteen (18) years of age and the age of majority in their jurisdiction.</p>
-                <p>Eros has a zero-tolerance policy toward human trafficking, prostitution, and any other illegal conduct. We cooperate with law enforcement in investigating criminal activity.</p>
+                <p>Erotica AI has a zero-tolerance policy toward human trafficking, prostitution, and any other illegal conduct. We cooperate with law enforcement in investigating criminal activity.</p>
                 <p className="text-sm">This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.</p>
               </div>
 
