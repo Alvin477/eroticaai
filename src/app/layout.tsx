@@ -7,7 +7,7 @@ import ConsentPopup from "@/components/ConsentPopup";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EroticaAI - AI Companions",
+  title: "Stripchat AIAI - AI Companions",
   description: "Experience intimate AI conversations in a safe, private environment",
   icons: {
     icon: [
