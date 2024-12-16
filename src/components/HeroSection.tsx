@@ -3,8 +3,22 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function HeroSection() {
+  const [copied, setCopied] = useState(false);
+  const caCode = 'E5SwUZYYqiztJwMPgbyTzxFa8KyEx4LQMuxa9QCLpump';
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(caCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
   const images = [
     '/img/h1.png',
     '/img/h2.png',
@@ -93,19 +107,47 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex gap-6 justify-center"
+            className="flex flex-col items-center gap-6"
           >
-            <Link href="/chat">
-              <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg shadow-red-900/20">
-                Start Chatting
+            <div className="flex gap-6 justify-center">
+              <Link href="/chat">
+                <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg shadow-red-900/20">
+                  Start Chatting
+                </button>
+              </Link>
+              <button 
+                onClick={scrollToCompanions}
+                className="border-2 border-red-500 hover:bg-red-500/10 px-8 py-4 rounded-full text-lg font-semibold transition-all"
+              >
+                View Companions
               </button>
-            </Link>
-            <button 
-              onClick={scrollToCompanions}
-              className="border-2 border-red-500 hover:bg-red-500/10 px-8 py-4 rounded-full text-lg font-semibold transition-all"
+            </div>
+
+            {/* CA Code Section */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              onClick={handleCopy}
+              className="flex items-center gap-2 bg-black/40 px-6 py-3 rounded-xl border border-red-500/20 cursor-pointer hover:bg-black/60 transition-all group"
             >
-              View Companions
-            </button>
+              <span className="text-gray-400">CA:</span>
+              <span className="text-red-500 font-mono">{caCode}</span>
+              <motion.div
+                animate={copied ? { scale: [1, 1.2, 1] } : {}}
+                className="text-gray-400 group-hover:text-red-500"
+              >
+                {copied ? (
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                  </svg>
+                )}
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
