@@ -7,19 +7,13 @@ import ConsentPopup from "@/components/ConsentPopup";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stripchat AIAI - AI Companions",
+  title: "Stripchat AI - AI Stripchat",
   description: "Experience intimate AI conversations in a safe, private environment",
   icons: {
-    icon: [
-      {
-        url: '/img/fav.png',
-        href: '/img/fav.png',
-      }
-    ],
-    shortcut: '/img/fav.png',
-    apple: '/img/fav.png',
+    icon: '/img/favicons.ico',
+    shortcut: '/img/favicons.ico',
+    apple: '/img/favicons.ico',
   },
-  manifest: '/manifest.json'
 };
 
 export default function RootLayout({
@@ -30,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/img/fav.png" />
-        <link rel="apple-touch-icon" href="/img/fav.png" />
+        <link rel="icon" href="/img/favicons.ico" sizes="any" />
+        <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/img/favicons.ico" />
       </head>
       <body className={`${inter.className} bg-black text-white`}>
         <ConsentPopup />
