@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export default function HeroSection() {
   const [copied, setCopied] = useState(false);
-  const caCode = 'E5SwUZYYqiztJwMPgbyTzxFa8KyEx4LQMuxa9QCLpump';
+  const caCode = '000000000000000000000000000';
 
   const handleCopy = async () => {
     try {
