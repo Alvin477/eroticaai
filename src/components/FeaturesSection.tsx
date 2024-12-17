@@ -104,7 +104,7 @@ export default function FeaturesSection() {
               {/* Logo & Description */}
               <div className="text-center md:text-left">
                 <div className="text-2xl md:text-3xl font-bold mb-4">
-                  <span className="text-red-500">AdultRoom AI</span>
+                  <span className="text-red-500">AdultRoom</span>
                   <span className="text-white">AI</span>
                 </div>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
