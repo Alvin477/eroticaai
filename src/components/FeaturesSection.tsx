@@ -104,7 +104,7 @@ export default function FeaturesSection() {
               {/* Logo & Description */}
               <div className="text-center md:text-left">
                 <div className="text-2xl md:text-3xl font-bold mb-4">
-                  <span className="text-red-500">Stripchat AI</span>
+                  <span className="text-red-500">AdultRoom AI</span>
                   <span className="text-white">AI</span>
                 </div>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
@@ -116,7 +116,7 @@ export default function FeaturesSection() {
               <div className="text-center md:text-right">
                 <h4 className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">24/7 Support</h4>
                 <p className="text-gray-400 text-sm md:text-base">
-                  support@Stripchat AIi.com
+                  support@AdultRoom AIi.com
                 </p>
                 <p className="text-gray-400 text-sm md:text-base mt-2">
                   Available anytime for your needs
@@ -127,7 +127,7 @@ export default function FeaturesSection() {
             {/* Copyright */}
             <div className="border-t border-red-500/10 mt-8 md:mt-12 pt-6 md:pt-8 text-center">
               <p className="text-gray-500 text-xs md:text-sm">
-                © {new Date().getFullYear()} Stripchat AIAI. All rights reserved. Must be 18+ to use this service.
+                © {new Date().getFullYear()} AdultRoom AI. All rights reserved. Must be 18+ to use this service.
               </p>
             </div>
           </div>

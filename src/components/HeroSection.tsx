@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function HeroSection() {
+  // Commenting out CA code functionality
+  /*
   const [copied, setCopied] = useState(false);
   const caCode = '000000000000000000000000000';
 
@@ -18,6 +20,7 @@ export default function HeroSection() {
       console.error('Failed to copy:', err);
     }
   };
+  */
 
   const images = [
     '/img/h1.png',
@@ -146,7 +149,7 @@ export default function HeroSection() {
                 </button>
               </div>
 
-              {/* CA Code Section */}
+              {/* Commenting out CA Code Section 
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -171,6 +174,7 @@ export default function HeroSection() {
                   )}
                 </motion.div>
               </motion.div>
+              */}
             </motion.div>
           </div>
         </div>

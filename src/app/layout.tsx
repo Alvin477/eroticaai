@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   title: "Stripchat AI - AI Stripchat",
   description: "Experience intimate AI conversations in a safe, private environment",
   icons: {
-    icon: '/img/favicons.ico',
-    shortcut: '/img/favicons.ico',
-    apple: '/img/favicons.ico',
+    icon: '/img/adultfav.ico',
+    shortcut: '/img/adultfav.ico',
+    apple: '/img/adultfav.ico',
   },
 };
 
@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/img/favicons.ico" sizes="any" />
-        <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/img/favicons.ico" />
+        <link rel="icon" href="/img/adultfav.ico" sizes="any" />
+        <link rel="shortcut icon" href="/img/adultfav.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/img/adultfav.ico" />
       </head>
       <body className={`${inter.className} bg-black text-white`}>
         <ConsentPopup />

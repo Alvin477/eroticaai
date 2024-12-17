@@ -14,10 +14,10 @@ export default function Header() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative w-40 h-12"
+              className="relative w-48 h-14"
             >
               <Image
-                src="/img/slogo.png"
+                src="/img/alogo.png"
                 alt="EroticaAI"
                 fill
                 className="object-contain"
